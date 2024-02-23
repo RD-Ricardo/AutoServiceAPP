@@ -1,0 +1,58 @@
+<div class="row" sty>
+    <div class="col-md-12 col-lg-12">
+      <nb-card>
+        <nb-tabset style="height: 75vh;" fullWidth>
+          <nb-tab tabTitle="Clientes" style="height: 100%;">
+
+            <div class="title h5">Clientes</div>
+
+            <!-- <nb-form-field class="row"> -->
+                <!-- <input #search class="search"  nbInput type="text" placeholder="Search..." (keydown.enter)="onSearch(search.value)"> -->
+                <!-- <button nbButton status="primary">Primary</button> -->
+            <!-- </nb-form-field> -->
+
+            <div style="overflow-y: scroll; height: 80%;">
+                <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+                </ng2-smart-table>
+            </div>
+          </nb-tab>
+          <nb-tab tabTitle="Cadastrar cliente">
+            <div class="title h5">Cadastro de cliente</div>
+        
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputFirstName" class="label">First Name</label>
+                    <input type="text" nbInput fullWidth id="inputFirstName" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputLastName" class="label">Last Name</label>
+                    <input type="text" nbInput fullWidth id="inputLastName" placeholder="Last Name">
+                  </div>
+                </div>
+            </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputEmail" class="label">Email</label>
+                    <input type="email" nbInput fullWidth id="inputEmail" placeholder="Email">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inputWebsite" class="label">Website</label>
+                    <input type="text" nbInput fullWidth id="inputWebsite" placeholder="Website">
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" nbButton>Submit</button>
+          </nb-tab>
+        </nb-tabset>
+      </nb-card>
+    </div>
+</div>
+  

@@ -1,0 +1,15 @@
+.container-login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eceff6;
+}
+
+.card-login{
+    width: 25%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(44, 51, 73, 0.1);
+    background-color: #ffff;
+}
